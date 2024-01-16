@@ -17,6 +17,8 @@
         }
 
         .sub-title {
+            /* block, inline, inline-block */
+            display: inline-block;
             text-align: left;
             background-color: #F9F9E0;
             color: #1B4242;
@@ -32,6 +34,8 @@
         body {
             background-color: #750E21;
             color: white;
+            background-image: url(images/3.jpg);
+            background-size: contain;
             font-family: 標楷體, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
@@ -58,6 +62,7 @@
         }
 
         .image {
+            /* display: block; */
             background-color: white;
             padding: 6px;
             width: 28%;
@@ -100,32 +105,51 @@
         #video {
             text-align: center;
         }
-        #post-form{
+
+        #post-form {
             text-align: center;
         }
-        form{
+
+        form {
             width: 60%;
             background-color: antiquewhite;
+            background-image: url(images/2.jpg);
+            background-size: cover;
             color: black;
             padding: 1rem 0px;
             border-radius: 1rem;
             margin-top: 6px;
             margin: 6px auto;
         }
+
         input,
         textarea,
         label,
-        button{
+        button {
             margin: 12px 0px;
             font-size: 24px;
         }
-        textarea{
+
+        textarea {
             background-color: rgb(211, 135, 108);
         }
-        button{
+
+        button {
             background-color: aqua;
             width: 100px;
             border-radius: 6px;
+        }
+
+        a {
+            color: aliceblue;
+        }
+
+        a:hover {
+            color: rgb(241, 38, 123);
+        }
+
+        a:active {
+            color: #e7e70c;
         }
     </style>
 </head>
