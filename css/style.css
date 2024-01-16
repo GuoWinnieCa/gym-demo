@@ -1,0 +1,86 @@
+
+body {
+    background-color: #750E21;
+    color: white;
+    /* background-image: url(../images/3.jpg); */
+    background-size: contain;
+    font-family: 標楷體, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.title {
+    /* left center right */
+    text-align: center;
+    color: crimson;
+    background-color: rgb(236, 205, 164);
+    font-size: 3rem;
+    border-radius: 2rem;
+    margin: 24px 64px;
+    padding: 12px;
+}
+#container {
+    padding: 1rem;
+}
+form {
+    text-align: center;
+    width: 60%;
+    background-color: antiquewhite;
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+    color: black;
+    padding: 1rem 0px;
+    border-radius: 1rem;
+    margin-top: 6px;
+    margin: 6px auto;
+}
+
+input,
+textarea,
+label,
+button {
+    margin: 12px 0px;
+    font-size: 24px;
+    text-align: center;
+    color: aliceblue;
+}
+
+textarea {
+    background-color: rgb(211, 135, 108);
+}
+
+button {
+    background-color: rgb(86, 157, 190);
+    width: 200px;
+    border-radius: 6px;
+}
+
+a {
+    color: aliceblue;
+}
+
+a:hover {
+    color: rgb(241, 38, 123);
+}
+
+a:active {
+    color: #e7e70c;
+}
+
+/* RWD */
+@media screen and (max-width:1024px) {
+    form {
+        width: 80%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    table{
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+
+
