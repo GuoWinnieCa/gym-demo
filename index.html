@@ -17,6 +17,8 @@
         }
 
         .sub-title {
+            /* block, inline, inline-block */
+            display: inline-block;
             text-align: left;
             background-color: #F9F9E0;
             color: #1B4242;
@@ -31,6 +33,8 @@
 
         body {
             background-color: #750E21;
+            background-image: url("images/3.jpg");
+            background-size: contain;
             color: white;
             font-family: 標楷體, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
@@ -58,12 +62,14 @@
         }
 
         .image {
+            display: inline-block;
             background-color: white;
             padding: 6px;
             width: 28%;
         }
 
         #photo {
+            
             text-align: center;
             background-color: #030637;
             border-radius: 2rem;
@@ -106,7 +112,9 @@
         form{
             width: 60%;
             background-color: antiquewhite;
-            color: black;
+            background-image: url("images/1.jpg");
+            background-size: contain;
+            color: white;
             padding: 1rem 0px;
             border-radius: 1rem;
             margin-top: 6px;
@@ -127,11 +135,21 @@
             width: 100px;
             border-radius: 6px;
         }
+        a{
+            color: antiquewhite;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: darkmagenta;
+        }
     </style>
 </head>
 
 <body>
     <div id="container">
+
         <div class="title">我愛健身網站
             <span class="eng-title">GYM WEB</span>
         </div>
@@ -146,7 +164,7 @@
         <hr>
         <!--  px==> pixel -->
         <a target="_blank" href="https://www.cw.com.tw/article/5124575">
-            <img width="100%"
+            <img width="100%" style="padding: 12px; background-color: white;" 
                 src="https://storage.googleapis.com/www-cw-com-tw/article/202302/article-63db4630c7fc2.jpg" alt="找不到圖片">
         </a>
 
