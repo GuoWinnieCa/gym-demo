@@ -8,9 +8,22 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <style>
+        #bmi {
+            font-size: 32px;
+        }
 
+        #comment {
+            font-size: 24px;
+        }
 
-
+        #result {
+            width: 300px;
+            background-color: aqua;
+            margin: 12px auto;
+            color: black;
+            border-radius: 12px;
+            padding: 12px 0px;
+        }
     </style>
 
 
@@ -28,7 +41,15 @@
             <input type="number" step="0.1" id="weight" name="weight" required style="color:black">
             <br><br>
             <button type="button" onclick="calcBmi()">計算</button>
-
+            <button type="button" onclick="clearForm()" style="background-color: brown; color: aliceblue;">清空</button>
+            <div id="result">
+                <div id="bmi">
+                    BMI:27.25
+                </div>
+                <div id="comment">
+                    正常
+                </div>
+            </div>
         </form>
         <a href="index.html">返回主頁</a>
 
