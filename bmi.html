@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI計算機</title>
-    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
     <style>
-        body{
-            background: antiquewhite;
-        }
-        a{
-          color: black;  
-        }
-        a:hover{
-            color: chartreuse;
-        }
-        a:active{
-            color: blueviolet;
+        #bmi {
+            font-size: 32px;
         }
 
+        #comment {
+            font-size: 24px;
+        }
 
-
+        #result {
+            width: 300px;
+            background-color: aqua;
+            margin: 12px auto;
+            color: black;
+            border-radius: 12px;
+            padding: 12px 0px;
+        }
     </style>
-    
+
+
 </head>
+
 <body>
     <div id="container">
-    <div class="title">BMI計算機 v0.1</div>
-    <form action="" method="GET">
-        <label for="username">姓名:</label>
-        <input type="text" id="username" name="useername"><br>
-        <label for="username">身高:</label>
-        <input type="number" step="0.1" id="height" name="height" required><br>
-        <label for="weight">體重:</label>
-        <input type="number" step="0.1" id="weight" name="weight" required>
-        <br><br>
-        <button type="submit">計算</button>
+        <div class="title">BMI計算機 v0.1</div>
+        <form action="" method="GET">
+            <label for="username">姓名:</label>
+            <input type="text" id="username" name="useername" style="color:black"><br>
+            <label for="username">身高:</label>
+            <input type="number" step="0.1" id="height" name="height" required style="color:black"><br>
+            <label for="weight">體重:</label>
+            <input type="number" step="0.1" id="weight" name="weight" required style="color:black">
+            <br><br>
+            <button type="button" onclick="calcBmi()">計算</button>
+            <button type="button" onclick="clearForm()" style="background-color: brown; color: aliceblue;">清空</button>
+            <div id="result">
+                <div id="bmi">
+                    BMI:27.25
+                </div>
+                <div id="comment">
+                    正常
+                </div>
+            </div>
+        </form>
+        <a href="index.html">返回主頁</a>
+
     </div>
-    </form>  
-    <a href="index.html">返回主頁</a>
-     
+    <script src="./js/bmi.js"></script>
 </body>
+
 </html>
